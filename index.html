@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CakeApp">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/png" href="img/icon.jpg">
+
+      <title>Cakes By Evelyn</title>
+
+       <link rel="stylesheet" href="css/main.css"/>
+       <!--jQuery, Bootstrap, Angular, Firebase, more below-->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+       <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script> 
+  </head>
+  <header class="mainheader">
+  <div class="container">
+        <h1>Cakes By Evelyn</h1>
+        <p class="lgscreen">Interesting Tagline here</p>
+    </div>
+  </header>
+  <body>
+    <nav>
+          <!-- Screen navigation elements -->
+      <div>
+        <ul>
+          <li><a class="menubutton"ui-sref="home">Home</a></li>
+          <li><a class="menubutton"ui-sref="gallery">Gallery</a></li> 
+          <li><a class="menubutton"ui-sref="menu">Menu</a></li>
+          <li><a class="menubutton"ui-sref="about">About</a></li>
+          <li><a class="menubutton"ui-sref="orders">Orders</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  <main>
+    <div ui-view></div>
+  </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-9">
+            <p><i class="fa fa-envelope"></i><a href="mailto:evelynthecakelady@gmail.com">  evelynthecakelady@gmail.com</a></p>
+            <p><i class="fa fa-phone"></i><a href="tel:+1-253-227-4299">  253-227-4299</a></p>
+            <p><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/evelynlorrainehay">  Add Facebook Page</a></p>
+          </div>
+          <div class="col-xs-12 col-sm-3">&copy; 2016 Cakes By Evelyn
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<!-- load external libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-sanitize.js"></script>
+<script src="lib/ui-bootstrap-tpls-0.14.3.min.js"></script>
+
+<!-- load script -->
+<script src="js/cake.js"></script>    
+    
+  </body>
+</html> 

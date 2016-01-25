@@ -1,0 +1,81 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+/* Import Bootstrap, font-awesome */
+
+nav {
+	position: relative;
+	background-color: #ff80d4;
+	color: #808080;
+	font-size: 16px;
+	z-index: 1;
+	font-variant: small-caps;
+	width: 100%;
+	text-align: center;
+}
+
+ul li {
+	display: inline;
+}
+
+li {
+	padding: 1em;
+}
+
+body {
+	background-color: #cccccc;
+}
+
+.headline {
+	text-align: center;
+}
+
+.profilepic {
+	max-width: 20%;
+	max-height: auto;
+	float: right;
+	border: 2px double;
+	border-color: #ff80d4;
+}
+
+footer {
+	max-height: 200px;
+	min-height: 200px;
+	border-top: 2px double;
+	border-top-color: #ff80d4;
+}
+
+
+/* Media query, instructions for large screens */
+@media screen and (min-width: 768px){
+
+	nav {
+		font-size: 20px;
+
+	}
+	body {
+		font-size: 20px;
+	}
+
+	header {
+		/* background-image: url(../img/background.jpg);
+		background-repeat: no-repeat; */
+		background-color: #808080;
+		background-size: 100%;
+		text-align: center;
+		color: #ff80d4;
+		min-height: 200px;
+		position: relative;
+		top: 0px;
+		width: auto;
+		margin: 0 auto;
+		border-bottom: 3px double;
+		border-bottom-color: #ff80d4;
+	}
+
+	.profilepic {
+		max-width: 40%;
+		max-height: auto;
+	}
+
+
+}
