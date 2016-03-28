@@ -19,18 +19,18 @@
   <div class="container">
         <h1>Cakes By Evelyn</h1>
         <p class="lgscreen">Interesting Tagline here</p>
-    </div>
+  </div>
   </header>
   <body>
-    <nav>
+    <nav ng-controller="cakeCtrl">
           <!-- Screen navigation elements -->
       <div>
         <ul>
-          <li><span ng-show="!hover"><a class="menubutton"ui-sref="home">Home</a></span><i ng-show="hover" class="fa fa-home"></i></li>
-          <li><a class="menubutton"ui-sref="gallery">Gallery</a></li> 
-          <li><a class="menubutton"ui-sref="menu">Menu</a></li>
-          <li><a class="menubutton"ui-sref="about">About</a></li>
-          <li><a class="menubutton"ui-sref="orders">Orders</a></li>
+          <li ng-mouseover="hoverhome = true" ng-mouseout="hoverhome = false"><a class="menubutton"ui-sref="home"><span ng-show="!hoverhome">Home</span><i ng-show="hoverhome" class="fa fa-home"></i></a></li>
+          <li ng-mouseover="hovergal = true" ng-mouseout="hovergal = false"><a class="menubutton"ui-sref="gallery"><span ng-show="!hovergal">Gallery</span><i ng-show="hovergal" class="fa fa-camera"></i></a></li> 
+          <li ng-mouseover="hovermenu = true" ng-mouseout="hovermenu = false"><a class="menubutton"ui-sref="menu"><span ng-show="!hovermenu">Menu</span><i ng-show="hovermenu" class="fa fa-cutlery"></i></a></li>
+          <li ng-mouseover="hoverfaq = true" ng-mouseout="hoverfaq = false"><a class="menubutton"ui-sref="about"><span ng-show="!hoverfaq">About/FAQ</span><i ng-show="hoverfaq" class="fa fa-question"></i></a></li>
+          <li ng-mouseover="hoverord = true" ng-mouseout="hoverord = false"><a class="menubutton"ui-sref="orders"><span ng-show="!hoverord">Orders</span><i ng-show="hoverord" class="fa fa-shopping-cart"></i></a></li>
         </ul>
       </div>
     </nav>

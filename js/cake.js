@@ -39,8 +39,36 @@ angular.module('CakeApp', ['ngSanitize', 'ui.router', 'ui.bootstrap'])
 })
 
 .controller('cakeCtrl', ['$scope', '$http', function($scope, $http) {
+/*
+	$scope.hover = true;
+	$scope.hover = function(x) {
+		console.log("before: " + hover);
+		hover = x;
+		console.log("after: " + hover);
+	}
+*/
+}])
 
-	$scope.hover = false;
+.controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
+	
+}])
 
+.controller('GalleryCtrl', ['$scope', '$http', function($scope, $http) {
+	
+}])
+
+.controller('DetailCtrl', ['$scope', '$http', function($scope, $http) {
+	
+}])
+
+.controller('MenuCtrl', ['$scope', '$http', function($scope, $http) {
+	
+}])
+
+.controller('InfoCtrl', ['$scope', '$http', function($scope, $http) {
+	
+}])
+
+.controller('OrderCtrl', ['$scope', '$http', function($scope, $http) {
 	
 }])

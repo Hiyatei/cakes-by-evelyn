@@ -17,8 +17,23 @@ ul li {
 	display: inline;
 }
 
-li {
+nav li {
 	padding: 1em;
+}
+
+nav i {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.menubutton {
+	color: #808080;
+	text-decoration: none;
+}
+
+.menubutton:hover, .menubutton:focus {
+	color: white;
+	text-decoration: none;
 }
 
 body {
