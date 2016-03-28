@@ -37,3 +37,10 @@ angular.module('CakeApp', ['ngSanitize', 'ui.router', 'ui.bootstrap'])
 	$urlRouterProvider.otherwise('/');
 
 })
+
+.controller('cakeCtrl', ['$scope', '$http', function($scope, $http) {
+
+	$scope.hover = false;
+
+	
+}])

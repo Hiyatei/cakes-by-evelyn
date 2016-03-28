@@ -2,6 +2,7 @@
 <html lang="en" ng-app="CakeApp">
   <head>
       <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" type="image/png" href="img/icon.jpg">
 
@@ -25,7 +26,7 @@
           <!-- Screen navigation elements -->
       <div>
         <ul>
-          <li><a class="menubutton"ui-sref="home">Home</a></li>
+          <li><span ng-show="!hover"><a class="menubutton"ui-sref="home">Home</a></span><i ng-show="hover" class="fa fa-home"></i></li>
           <li><a class="menubutton"ui-sref="gallery">Gallery</a></li> 
           <li><a class="menubutton"ui-sref="menu">Menu</a></li>
           <li><a class="menubutton"ui-sref="about">About</a></li>
@@ -44,7 +45,7 @@
           <div class="col-xs-12 col-sm-9">
             <p><i class="fa fa-envelope"></i><a href="mailto:evelynthecakelady@gmail.com">  evelynthecakelady@gmail.com</a></p>
             <p><i class="fa fa-phone"></i><a href="tel:+1-253-227-4299">  253-227-4299</a></p>
-            <p><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/evelynlorrainehay">  Add Facebook Page</a></p>
+            <p><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/evelynthecakelady">  Like us on Facebook!</a></p>
           </div>
           <div class="col-xs-12 col-sm-3">&copy; 2016 Cakes By Evelyn
           </div>
