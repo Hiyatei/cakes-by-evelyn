@@ -187,19 +187,24 @@ footer i {
 	}
 
 	header {
-		/* background-image: url(../img/background.jpg);
-		background-repeat: no-repeat; */
-		background-color: #808080;
+		background-image: url(../img/image-9.jpg);
+		background-repeat: no-repeat;
 		background-size: 100%;
-		text-align: center;
-		color: #ff80d4;
+		background-position: center;
+		opacity: .5;
 		min-height: 200px;
 		position: relative;
 		top: 0px;
 		width: auto;
 		margin: 0 auto;
-		border-bottom: 3px double;
+		border-bottom: 6px double;
 		border-bottom-color: lightpink;
+	}
+
+	header .info {
+		color: black;
+		text-align: center;
+		opacity: 1.5;
 	}
 
 	.profilepic {
